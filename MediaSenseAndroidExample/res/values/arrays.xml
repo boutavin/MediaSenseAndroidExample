@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ucis">
+        <item>phone1@mediasense.se/ex</item>
+        <item>phone2@mediasense.se/ex</item>
+        <item>phone3@mediasense.se/ex</item>
+        <item>phone4@mediasense.se/ex</item>
+        <item>phone5@mediasense.se/ex</item>
+    </string-array>
+    
+    <string-array name="cis">
+        <item>example</item>
+        <item>hej</item>
+        <item>test</item>
+        <item>hello</item>
+        <item>world</item>
+        <item>foo</item>
+        <item>bar</item>
+    </string-array>
+</resources>

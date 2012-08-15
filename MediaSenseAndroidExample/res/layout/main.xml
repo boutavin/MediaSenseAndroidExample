@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="local CI"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinnerLocalUci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ucis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remote UCI"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinnerRemoteUci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ucis" />
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="3dip"
+	    android:orientation="vertical" 
+	    android:background="#c56f00"
+	    android:layout_marginBottom="5dip"/>
+    
+    <LinearLayout
+        android:id="@+id/layoutBeforeRegistration"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal">
+    
+	    <Button
+	        android:id="@+id/buttonRegister"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Register" 
+	        android:layout_marginBottom="15dip"/>
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Select a local and a remote UCI then register to continue!"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:gravity="center_horizontal" />
+    
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/layoutAfterRegistration"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal"
+	    android:visibility="invisible" >
+    
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Response from GET"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_marginBottom="5dip"/>
+
+    <TextView
+        android:id="@+id/textViewGetReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginBottom="10dip"/>
+
+    <Button
+        android:id="@+id/buttonSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscription event"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_marginBottom="5dip"/>
+
+    <TextView
+        android:id="@+id/textViewSubscriptionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginBottom="10dip"/>
+
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="3dip"
+	    android:orientation="vertical" 
+	    android:background="#c56f00"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Context Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+    
+	    <Spinner
+        android:id="@+id/spinnerContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:entries="@array/cis" />
+	
+	    <Button
+	        android:id="@+id/buttonNotify"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Notify new value" />
+    
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>
